@@ -1,0 +1,139 @@
+/*
+ First External CSS Stylesheet
+ */
+
+/*
+ * Row and Column Classes
+ * Source: https://www.w3schools.com/howto/howto_js_image_grid.asp
+ */
+ .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/*
+ * Fixed Position: Anchors element to the browser
+ */
+
+ .box-set {
+  position: relative;
+  height: 400px;
+  background: darkgray;
+}
+
+.box {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  background: #2db34a;
+  border: 2px solid black;
+}
+
+/* Box rules: percentages define anchors (i.e. position of each box relative to browser window) */
+
+.box-1 {
+  top: 6%;
+  left: 2%;
+}
+
+.box-2 {
+  top: 0;
+  right: -40px;
+}
+
+.box-3 {
+  right: 20px;
+  bottom: -10px;
+}
+
+.box-4 {
+  bottom: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333;
+  background: #efeee7;
+}
+
+header {
+  background: #333;
+}
+
+h1 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+  color: #d21034;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Selecting elements by class */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* Selecting elements by ID */
+#main-bio,
+#contact-info,
+#bio-image {
+  float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+#bio-name {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+#main-bio {
+  width: 70%;
+}
+
+#contact-info {
+  width: 30%;
+}
+
+#bio-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
